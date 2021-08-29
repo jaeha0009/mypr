@@ -55,7 +55,7 @@ rate40 = 0.4
 rate_minus = 0.95
 
 
-interval = "day"
+interval = "minute240"
 
 ticker = "KRW-DOGE"
 currency = "DOGE"
@@ -68,7 +68,7 @@ while True:
     
     start_time = get_start_time(ticker, interval)
     now = datetime.datetime.now()
-    end_time = start_time + datetime.timedelta(days=1) - datetime.timedelta(seconds=5)
+    end_time = start_time + datetime.timedelta(minutes=240) - datetime.timedelta(seconds=5)
    
             
 
